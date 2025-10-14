@@ -1,20 +1,24 @@
-# Analysis of WHO Data on Smoking & Mortality Risk
+# Analysis of WHO Data on Smoking & NCD Mortality Risk
 
-### Project Goal
-This project analyzes a WHO dataset of over 110,000 records to model the key drivers of NCD mortality risk. The analysis progresses from data cleaning and advanced imputation to building and comparing OLS and Random Forest models, culminating in a scenario analysis to forecast the public health impact of smoking reduction policies.
+> This project analyzes a WHO dataset to model the drivers of NCD mortality risk and forecast the public health impact of smoking reduction policies.
 
 ---
 
-### Key Findings & Highlights
+### ➡️ [**Click Here to View the Full Project Notebook**](WHO_Smoking_Mortality_Analysis.ipynb)
 
-*   **Advanced Data Cleaning:** Successfully implemented a full data pipeline, using **Multivariate Imputation by Chained Equations (MICE)** to robustly handle missing values and correct for biases that simpler methods would have introduced.
+---
+
+## Key Features & Insights
+
+*   **Advanced Data Imputation:** Implemented a full data pipeline using **Multivariate Imputation by Chained Equations (MICE)** to robustly handle missing values, correcting for biases that simpler methods would have introduced.
 
 *   **Strategic Modeling:** Progressed from an initial OLS regression to a more powerful **Random Forest** model after diagnostic checks revealed significant non-linearity in the data.
 
-*   **Actionable Insights:** The final, cross-validated Random Forest model (**Mean CV R² = 0.55**) was used to forecast that a **10% reduction in smoking prevalence could lower mortality risk by 3.9%** for males in upper-middle-income nations, identifying a key demographic for targeted health interventions.
+*   **Actionable Forecast:** The final, cross-validated Random Forest model (**Mean CV R² = 0.55**) was used in a scenario analysis to forecast that a **10% reduction in smoking prevalence could lower mortality risk by 3.9%** for males in upper-middle-income nations.
 
----
+## Technologies Used
+- **Python:** scikit-learn, pandas, statsmodels
+- **Visualization:** Matplotlib, Seaborn
 
-### Technology Used
-*   **Python**
-*   **Libraries:** Pandas, scikit-learn, statsmodels, Matplotlib, Seaborn
+## Data
+The dataset used for this analysis is located in the **`WHO DATA`** folder within this repository.
