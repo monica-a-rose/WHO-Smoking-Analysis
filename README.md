@@ -20,5 +20,12 @@
 - **Python:** scikit-learn, pandas, statsmodels
 - **Visualization:** Matplotlib, Seaborn
 
-## Data
-The dataset used for this analysis is located in the **`WHO DATA`** folder within this repository.
+## Dataset
+
+This project uses publicly available data on non-communicable diseases (NCDs) and their risk factors, sourced from the **World Health Organization (WHO) Global Health Observatory**.
+
+---
+
+## Results
+
+The scenario analysis using the final Random Forest model predicted that a 10% reduction in smoking could lower mortality risk for males in upper-middle-income countries by as much as **3.9%**.
